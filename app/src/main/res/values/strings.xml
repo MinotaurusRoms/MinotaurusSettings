@@ -52,7 +52,7 @@
     <string name="set_theme">Set theme</string>
     <string name="backup_and_restore"><![CDATA[Backup & Restore]]></string>
     <string name="changelog">Changelog</string>
-    <string name="about_us">About us</string>
+    <string name="about_us">About me</string>
     <string name="confirm_script_dialog_message">"Are you sure you want to run %1$s?"</string>
     <string name="run_script_confirm_dialog_title">Confirmation required</string>
     <string name="run_script_confirm_dialog_positive_button">Yes, run</string>

@@ -9,28 +9,25 @@
     This order is how they will appear in the dialog
     Make any order you want from top to bottom-->
     <string-array name="changelog_items">
-        <item>Some changelog thing lkjh l lkjh slkjh lkjh s,mnb lkjhs lkjh poiuy slkjh</item>
-        <item>Another changelog thing ;lkj d;lkj ;lkjs ;lkj ;lkj s;lkj ;lkj s;lkj ;lkj ;lks ;lkj ;lkj</item>
-        <item>Some more changelog things</item>
-        <item>Some even more changelog thing</item>
-        <item>And another changelog thing ;lsj; lkjs ;lkj ; lkj;lsjk ;sklj s;lkj s;lk js;lkj s;lkj</item>
-        <item>How many changelog things</item>
-        <item>What a long changelog!!!</item>
-        <item>Is it twenty already?</item>
-        <item>Are we there yet?</item>
-        <item>Live long and prosper</item>
-        <item>So say we all</item>
-        <item>Patience you must have</item>
-        <item>Great scot!!!</item>
-        <item>No disassemble…</item>
-        <item>Almost there</item>
-        <item>Done with changelog</item>
+        <item>- added Quicksettings Toggles Color for on and off with romcontrol support</item>
+        <item>- added swipe up, swipe down and double tap feature to launcher with romcontrol support</item>
+        <item>- added expanded header modded clock with seconds option</item>
+        <item>- added colorize option for expanded header modded clock and date</item>
+        <item>- added option in romcontrol to switch on/off USB plug in/out wake up</item>
+        <item>- enabled outdoor mode in settings/display</item>
+        <item>- enabled touch key light duration in settings/display</item>
+        <item>- added supersu in settings</item>
+        <item>- added toolbox in romcontrol app</item>
+        <item>- added Screencast to Reboot menue with toggle show/hide in romcontrol</item>
+        <item>- added Screenshot to Reboot menue with toggle show/hide in romcontrol</item>
+        <item>- added networktraffic to statusbar with settings in romcontrol</item>
+        <item>- changed device status to "Official" not custom thx @Aou @cstayton</item>
     </string-array>
 
     <!--This will be the dialog title.
     Put your own rom version and name.
     Have fun-->
-    <string name="rom_version_for_changelog">build v1.0 6thgearrom</string>
+    <string name="rom_version_for_changelog">CRISSCROSS ROM V2.2</string>
 
 
 </resources>

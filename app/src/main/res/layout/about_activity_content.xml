@@ -31,7 +31,7 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="361dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             app:cardBackgroundColor="?android:colorBackground"
@@ -51,9 +51,10 @@
                     android:paddingBottom="3dp"
                     android:paddingStart="16dp"
                     android:paddingTop="3dp"
-                    android:text="Contact Us"
+                    android:text="Contact Me"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="@android:color/white"/>
+                    android:textColor="@android:color/white"
+                    android:singleLine="true" />
 
                 <LinearLayout
                     android:id="@+id/aboutContactUsContainer"
@@ -70,7 +71,7 @@
                     android:paddingBottom="3dp"
                     android:paddingStart="16dp"
                     android:paddingTop="3dp"
-                    android:text="Our Team"
+                    android:text="My Team"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@android:color/white"/>
 

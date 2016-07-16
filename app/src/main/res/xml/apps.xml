@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceScreen
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Shortcut to apps">
+        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Toolbox"
         android:summary="Toolbox floating feature"
-        android:title="Toolbox">
-        <intent
-            android:targetClass="com.wubydax.toolboxsettings.ToolboxSettings"
-            android:targetPackage="com.wubydax.toolboxsettings"
-            android:action="android.intent.action.MAIN" />
-    </PreferenceScreen>
-    <PreferenceScreen
-        android:summary="Set Statusbar Color"
-        android:title="Gradient Statusbar">
-        <intent
-            android:targetClass="com.potato.gradientapp.MainActivity"
-            android:targetPackage="com.potato.gradientapp"
-            android:action="android.intent.action.MAIN" />
-    </PreferenceScreen>
-    <PreferenceScreen
-        android:summary="Custom battery chooser"
-        android:title="3Minit Battery Mod">
-        <intent
-            android:targetClass="com.three.minit.minitbatterysettings.MainActivity"
-            android:targetPackage="com.three.minit.minitbatterysettings.free"
-            android:action="android.intent.action.MAIN" />
-    </PreferenceScreen>
+        app:componentName="com.wubydax.toolboxsettings/com.wubydax.toolboxsettings.ToolboxSettings"/>
+        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            android:title="Gradient Statusbar"
+            android:summary="Set Statusbar Color"
+            app:componentName="com.potato.gradientapp/com.potato.gradientapp.MainActivity"/>
+        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            android:title="3Minit Battery Mod"
+            android:summary="Custom battery chooser"
+            app:componentName="com.three.minit.minitbatterysettings.free/com.three.minit.minitbatterysettings.MainActivity"/>
+    </PreferenceCategory>
 </PreferenceScreen>

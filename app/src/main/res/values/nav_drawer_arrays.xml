@@ -29,7 +29,6 @@
         <item>@drawable/ic_system_ui</item>
         <item>@drawable/ic_system_ui</item>
         <item>@drawable/ic_system_ui</item>
-        <item>@drawable/ic_system_ui</item>
     </array>
 
 
@@ -42,7 +41,6 @@
         <item>Phone mods</item>
         <item>TW launcher mods</item>
         <item>Apps</item>
-        <item>Test</item>
     </string-array>
 
 
@@ -56,6 +54,5 @@
         <item>phone_prefs</item>
         <item>launcher_mods</item>
         <item>apps</item>
-        <item>ui_prefs</item>
     </string-array>
 </resources>

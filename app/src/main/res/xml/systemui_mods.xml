@@ -21,7 +21,9 @@
             android:key="minit_battery_visible"
             android:defaultValue="false"
             android:summaryOn="Show"
-            android:summaryOff="Hide" />
+            android:summaryOff="Hide"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />/>
         <PreferenceScreen android:title="Battery Bar" android:summary="Display Line on top for battery">
             <com.wubydax.romcontrol.v2.prefs.MyListPreference
                 android:entries="@array/battery_bar_entries"
@@ -62,7 +64,9 @@
             android:title="Custom Carrier Color"
             android:key="CustomCarrierColor"
             android:defaultValue="\#ffffffff"
-            alphaSlider="true" />
+            alphaSlider="true"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:title="Custom Carrier Right of Wifi/Signal Combo"
             android:key="CustomCarrierRight"
@@ -113,21 +117,27 @@
             android:key="psm_notif"
             android:defaultValue="false"
             android:summaryOn="Power Saving Mode notification is enabled"
-            android:summaryOff="Power Saving Mode notification is disabled" />
+            android:summaryOff="Power Saving Mode notification is disabled"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:entries="@array/lockscreen_notif_entries"
             android:title="Notifications Shown on Lockscreen"
             android:key="lockscreen_notifications"
             android:defaultValue="2"
             android:summary="Number shown on lockscreen"
-            android:entryValues="@array/lockscreen_notif_values" />
+            android:entryValues="@array/lockscreen_notif_values"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:title="Notification background color"
             android:key="notification_background_color"
             android:summary="Choose color"
             android:defaultValue="\#fffafafa"
             alphaSlider="true"
-            hexValue="true" />
+            hexValue="true"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Lockscreen">
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
@@ -168,7 +178,9 @@
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:title="Next Alarm Text Color"
             android:key="next_alarm_color"
-            android:summary="Choose color" />
+            android:summary="Choose color"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Expanded view">
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
@@ -182,7 +194,9 @@
             android:key="ongoing_notifications"
             android:defaultValue="false"
             android:summaryOn="Ongoing Notifications are removeable"
-            android:summaryOff="Ongoing Notifications are permanent" />
+            android:summaryOff="Ongoing Notifications are permanent"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="true"
             android:key="notification_panel_brightness_adjustment"
@@ -211,7 +225,9 @@
             android:title="Data Useage Color"
             android:key="data_usage_colors"
             android:summaryOn="enabled"
-            android:summaryOff="disabled" />
+            android:summaryOff="disabled"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:title="Data Useage Color"
             android:key="data_usage_color"
@@ -219,7 +235,9 @@
             android:summary="Choose color"
             android:defaultValue="\#ffffffff"
             alphaSlider="true"
-            hexValue="true" />
+            hexValue="true"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:title="Expanded view background color"
             android:key="expanded_bg_colors"
@@ -232,26 +250,34 @@
             android:summary="Choose color"
             android:defaultValue="\#fffafafa"
             alphaSlider="true"
-            hexValue="true" />
+            hexValue="true"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:title="Toggle On Color"
             android:key="toggle_icon_on_color"
             android:defaultValue="\#ff3b91dc"
             hexValue="true"
             alphaSlider="true"
-            android:summary="Set toggle On color" />
+            android:summary="Set toggle On color"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:title="Toggle Off Color"
             android:key="toggle_icon_off_color"
             android:defaultValue="\#ffb8c6d3"
             hexValue="true"
             alphaSlider="true"
-            android:summary="Set toggle Off color" />
+            android:summary="Set toggle Off color"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:title="Modded clock and date colors"
             android:key="mod_date_colors"
             android:summaryOn="enabled"
-            android:summaryOff="disabled" />
+            android:summaryOff="disabled"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:title="Mod clock hours color"
             android:key="header_mod_clock_hours_color"
@@ -283,7 +309,7 @@
             android:summaryOff="Custom bg disabled"
             android:summaryOn="Custom bg enabled"
             android:title="Custom Background Notification Panel"/>
-        <PreferenceScreen
+        <com.wubydax.romcontrol.v2.prefs.UriSelectionPreference
             android:dependency="enable_custom_bg"
             android:key="notification_panel_bg"
             android:title="Select Bg Image Notification Panel"/>

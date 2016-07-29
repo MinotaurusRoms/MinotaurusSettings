@@ -183,6 +183,107 @@
             app:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Expanded view">
+        <PreferenceScreen
+            android:title="Carrier label text preferences">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:title="Carrier label visibility"
+                android:defaultValue="true"
+                android:summaryOff="Hidden"
+                android:summaryOn="Shown"
+                android:key="carrier_label_visibility"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:dependency="carrier_label_visibility"
+                android:defaultValue="#ffffff"
+                android:key="carrier_label_text_color"
+                android:title="Carrier label text color"/>
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:title="Carrier label text"
+                android:entries="@array/carrier_entries"
+                android:entryValues="@array/carrier_entry_values"
+                android:defaultValue="0"
+                app:dependentValue="0"
+                android:key="is_custom_carrier_label"
+                android:dependency="carrier_label_visibility"/>
+            <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference
+                android:title="Custom text for carrier label"
+                android:defaultValue="Custom Text"
+                android:dependency="is_custom_carrier_label"
+                android:key="custom_carrier_label"/>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="Device info settings">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="device_info_visibility"
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Enable device info view"/>
+            <PreferenceCategory
+                android:title="Text colors"
+                android:dependency="device_info_visibility">
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="gear_info_names_color"
+                    android:title="Info names text color"/>
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="gear_info_values_color"
+                    android:title="Info values text color"/>
+            </PreferenceCategory>
+            <PreferenceCategory
+                android:title="Device Info Items"
+                android:dependency="device_info_visibility">
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_model"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Device model"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_android_version"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Android version"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_build_version"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Build version"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_battery_level"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Battery level"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_network_name"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Network name"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_wifi_info"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="WIFI info"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_next_alarm"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Next alarm"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_up_time"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Device up time"/>
+
+            </PreferenceCategory>
+        </PreferenceScreen>
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:title="Single swipe for expanded Quickpanel"
             android:key="tweaks_qs_pulldown"
@@ -303,23 +404,6 @@
             android:defaultValue="\#ff000000"
             alphaSlider="false" />
     </PreferenceCategory>
-        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-            android:defaultValue="true"
-            android:key="enable_custom_bg"
-            android:summaryOff="Custom bg disabled"
-            android:summaryOn="Custom bg enabled"
-            android:title="Custom Background Notification Panel"/>
-        <com.wubydax.romcontrol.v2.prefs.UriSelectionPreference
-            android:dependency="enable_custom_bg"
-            android:key="notification_panel_bg"
-            android:title="Select Bg Image Notification Panel"/>
-        <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference
-            min="0"
-            android:defaultValue="255"
-            android:dependency="enable_custom_bg"
-            android:key="notification_panel_alpha"
-            android:max="255"
-            android:title="Image opacity"/>
     <PreferenceCategory android:title="Recent Panel Options">
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:title="Recent Panel Quick Launch"

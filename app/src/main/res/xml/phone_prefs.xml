@@ -7,4 +7,10 @@
         android:defaultValue="true"
         android:summaryOn="On"
         android:summaryOff="Off" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Multi-user Avatar"
+        android:key="multiuser_avatar"
+        android:defaultValue="false"
+        android:summaryOn="Multi-user Avatar shown"
+        android:summaryOff="Multi-user Avatar hidden" />
 </PreferenceScreen>

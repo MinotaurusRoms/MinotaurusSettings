@@ -85,4 +85,24 @@
     <string name="network_traffic_color_style">Color style</string>
     <string name="network_traffic_color_reset">Reset color</string>
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
+    <string-array name="tw_effect_entries">
+        <item>None</item>
+        <item>Cascade</item>
+        <item>Outer cube</item>
+        <item>Inner Cube</item>
+        <item>Carousal</item>
+        <item>Plain</item>
+        <item>Conveyor</item>
+        <item>Card</item>
+    </string-array>
+    <string-array name="tw_effect_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
 </resources>

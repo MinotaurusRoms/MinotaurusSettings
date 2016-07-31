@@ -27,6 +27,7 @@
         <item>@drawable/ic_system_ui</item>
         <item>@drawable/ic_system_ui</item>
         <item>@drawable/ic_reboot</item>
+        <item>@drawable/ic_system_ui</item>
     </array>
 
 
@@ -37,6 +38,7 @@
         <item>Sytemui mods</item>
         <item>Phone mods</item>
         <item>Rebootmenue mods</item>
+        <item>Custom Backgrounds mods</item>
     </string-array>
 
 
@@ -48,5 +50,6 @@
         <item>systemui_mods</item>
         <item>phone_mods</item>
         <item>reboot_menue_mods</item>
+        <item>custom_bg_mods</item>
     </string-array>
 </resources>

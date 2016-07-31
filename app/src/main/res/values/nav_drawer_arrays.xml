@@ -25,12 +25,8 @@
     MAKE SURE THE ITEMS IN ALL 3 ARRAYS CORRESPOND IN ORDER AND ALL 3 ARRAYS ARE SAME LENGTH-->
     <array name="nav_menu_prefs_drawables">
         <item>@drawable/ic_system_ui</item>
+        <item>@drawable/ic_system_ui</item>
         <item>@drawable/ic_reboot</item>
-        <item>@drawable/ic_phone</item>
-        <item>@drawable/ic_system_ui</item>
-        <item>@drawable/ic_framework</item>
-        <item>@drawable/ic_system_ui</item>
-        <item>@drawable/ic_system_ui</item>
     </array>
 
 
@@ -39,12 +35,8 @@
     KEEP THE ORDER BETWEEN ALL YOUR ARRAYS-->
     <string-array name="nav_menu_prefs_titles">
         <item>Sytemui mods</item>
-        <item>Reboot menue mods</item>
         <item>Phone mods</item>
-        <item>TW launcher mods</item>
-        <item>Apps</item>
-        <item>Custom Backgrounds</item>
-        <item>Launcher mods</item>
+        <item>Rebootmenue mods</item>
     </string-array>
 
 
@@ -54,11 +46,7 @@
     THEY MUST BE PRECISE AND CASE SENSITIVE!!! DO NOT ADD .xml SUFFIX-->
     <string-array name="nav_menu_xml_file_names" translatable="false">
         <item>systemui_mods</item>
+        <item>phone_mods</item>
         <item>reboot_menue_mods</item>
-        <item>phone_prefs</item>
-        <item>launcher_mods</item>
-        <item>apps</item>
-        <item>custom_bg</item>
-        <item>launcher</item>
     </string-array>
 </resources>

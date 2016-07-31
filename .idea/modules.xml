@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CRISSCROSS ROM CONTROL NOTE5.iml" filepath="$PROJECT_DIR$/CRISSCROSS ROM CONTROL NOTE5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CRISSCROSS-ROM-CONTROL-NOTE-7-PORT.iml" filepath="$PROJECT_DIR$/CRISSCROSS-ROM-CONTROL-NOTE-7-PORT.iml" />
       <module fileurl="file://$PROJECT_DIR$/RomControl.iml" filepath="$PROJECT_DIR$/RomControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

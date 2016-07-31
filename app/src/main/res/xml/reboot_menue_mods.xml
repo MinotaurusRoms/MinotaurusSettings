@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-        android:title="Reboot Recovery Mode"
+        android:title="Reboot Recovery Button"
         android:key="reboot_recovery"
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:summaryOn="Reboot Recovery will be shown"
         android:summaryOff="Currently removed" />
     <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-        android:title="Emergency Mode"
+        android:title="Emergency Mode Button"
         android:key="power_emergency"
         android:defaultValue="true"
         android:summaryOn="Emergency mode will be shown"
-        android:summaryOff="Currently removed" />
-    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-        android:title="Screencast Mode"
-        android:key="screencast"
-        android:defaultValue="false"
-        android:summaryOn="Screencast mode will be shown"
-        android:summaryOff="Currently removed" />
-    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-        android:title="Screenshot Mode
-        " android:key="screenshot"
-        android:defaultValue="false"
-        android:summaryOn="Screenshot mode will be shown"
         android:summaryOff="Currently removed" />
 </PreferenceScreen>

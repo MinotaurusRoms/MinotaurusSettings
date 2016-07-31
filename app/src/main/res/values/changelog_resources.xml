@@ -9,19 +9,7 @@
     This order is how they will appear in the dialog
     Make any order you want from top to bottom-->
     <string-array name="changelog_items">
-        <item>- added Quicksettings Toggles Color for on and off with romcontrol support</item>
-        <item>- added swipe up, swipe down and double tap feature to launcher with romcontrol support</item>
-        <item>- added expanded header modded clock with seconds option</item>
-        <item>- added colorize option for expanded header modded clock and date</item>
-        <item>- added option in romcontrol to switch on/off USB plug in/out wake up</item>
-        <item>- enabled outdoor mode in settings/display</item>
-        <item>- enabled touch key light duration in settings/display</item>
-        <item>- added supersu in settings</item>
-        <item>- added toolbox in romcontrol app</item>
-        <item>- added Screencast to Reboot menue with toggle show/hide in romcontrol</item>
-        <item>- added Screenshot to Reboot menue with toggle show/hide in romcontrol</item>
-        <item>- added networktraffic to statusbar with settings in romcontrol</item>
-        <item>- changed device status to "Official" not custom thx @Aou @cstayton</item>
+        <item>Changelog you see in Rom Thread</item>
     </string-array>
 
     <!--This will be the dialog title.

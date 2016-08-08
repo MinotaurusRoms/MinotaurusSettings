@@ -12,4 +12,16 @@
         android:defaultValue="true"
         android:summaryOn="Emergency mode will be shown"
         android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Screencast Mode"
+        android:key="screencast"
+        android:defaultValue="false"
+        android:summaryOn="Screencast Mode will be shown"
+        android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Screenshot Mode"
+        android:key="screenshot"
+        android:defaultValue="false"
+        android:summaryOn="Screenshot Mode will be shown"
+        android:summaryOff="Currently removed" />
 </PreferenceScreen>

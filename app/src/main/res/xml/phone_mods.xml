@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-        android:title="USB plug in/out wakeup"
-        android:key="usb_plugged"
-        android:defaultValue="true"
-        android:summaryOn="On"
-        android:summaryOff="Off" />
-    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-        android:title="Multi-user Avatar"
-        android:key="multiuser_avatar"
-        android:defaultValue="false"
-        android:summaryOn="Multi-user Avatar shown"
-        android:summaryOff="Multi-user Avatar hidden"
-        app:packageNameToKill="com.android.systemui"/>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:defaultValue="3000"
+        android:key="button_key_light"
+        android:entries="@array/button_key_light_entries"
+        android:entryValues="@array/button_key_light_values"
+        android:summary="%s"
+        android:title="Keyboard backlight duration"/>
 </PreferenceScreen>

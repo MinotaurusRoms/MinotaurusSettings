@@ -211,7 +211,7 @@
             <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Stock clock center" android:key="clockcenter" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled"/>
             <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Stock clock right" android:key="clockright" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled"/>
             <PreferenceScreen android:title="Press clock for open any app">
-                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Enable Tap Clock" android:key="sb_tap_clock_launcher" android:defaultValue="true" android:summaryOn="Tap Clock Active" android:summaryOff="Tap Clock is disabled" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Enable Tap Clock" android:key="sb_tap_clock_launcher" android:defaultValue="true" android:summaryOn="Tap clock active" android:summaryOff="Tap clock is disabled" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
                 <com.wubydax.romcontrol.v2.prefs.IntentDialogPreference android:key="press_clock_custom_app" android:title="Choose app" android:dependency="sb_tap_clock_launcher" app:intentSeparator="\##" />
             </PreferenceScreen>
         </PreferenceScreen>

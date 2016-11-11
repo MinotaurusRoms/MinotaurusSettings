@@ -33,7 +33,7 @@
     <!--In this array you will put the titles for the URL strings that will open once a user clicked on the item-->
     <string-array name="about_contact_us_links" translatable="false">
         <item>http://goo.gl/VwODt3</item>
-        <item>http://goo.gl/zcZlCP</item>
+        <item>https://goo.gl/P3blL0</item>
     </string-array>
 
 

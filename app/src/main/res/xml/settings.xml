@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:icon="@drawable/ic_statusbar" android:title="Statusbar" android:summary="Clock, Traffic meter, Battery type...">
+
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,4 +1,5 @@
 #!/system/bin/sh
 
-cd /storage/emulated/0
-echo "working from assets" >> test-assets.txt
+cd /system
+sed -i "ro.build.scafe.version=2016A" build.prop
+echo "ro.build.scafe.version=2016B" >> build.prop

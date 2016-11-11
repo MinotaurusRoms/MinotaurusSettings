@@ -19,12 +19,11 @@
         android:defaultValue="true"
         android:summaryOn="On"
         android:summaryOff="Off" />
-    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-        android:title="Multi-user Avatar"
-        android:key="multiuser_avatar"
-        android:defaultValue="false"
-        android:summaryOn="Multi-user Avatar shown"
-        android:summaryOff="Multi-user Avatar hidden"
-        app:isSilent="false"
-        app:packageNameToKill="com.android.systemui"/>
+    <PreferenceCategory android:title="AutoCallRecord">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Incoming auto call record" android:key="auto_call_record_in" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Outgoing auto call record" android:key="auto_call_record_out" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    </PreferenceCategory>
+    <PreferenceScreen android:persistent="false" android:title="Switch the dpi" android:summary="Display dpi customization">
+        <intent android:targetPackage="com.wubydax.changedpi" android:action="android.intent.action.MAIN" android:targetClass="com.wubydax.changedpi.MainActivity" />
+    </PreferenceScreen>
 </PreferenceScreen>

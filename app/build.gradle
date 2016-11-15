@@ -35,9 +35,9 @@ android {
         minSdkVersion 21
         //noinspection OldTargetApi
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
-        project.archivesBaseName = "RomControl"
+        versionCode 9
+        versionName "9.0"
+        project.archivesBaseName = "Minotaurus V9"
     }
 
     buildTypes {

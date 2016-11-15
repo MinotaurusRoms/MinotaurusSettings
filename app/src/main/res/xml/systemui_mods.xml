@@ -198,6 +198,7 @@
 
 
     <PreferenceScreen android:title="Lockscreen">
+        <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference android:defaultValue="17" android:key="ts_aod_brightness" android:title="AOD brightness" app:maxValue="255" app:minValue="0" app:rebootDevice="true"/>
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="false"
             android:key="lockscreen_rotate"

@@ -35,9 +35,9 @@ android {
         minSdkVersion 21
         //noinspection OldTargetApi
         targetSdkVersion 22
-        versionCode 9
-        versionName "9.0"
-        project.archivesBaseName = "Minotaurus V9"
+        versionCode 10
+        versionName "10.0"
+        project.archivesBaseName = "Minotaurus V10"
     }
 
     buildTypes {

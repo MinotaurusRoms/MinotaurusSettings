@@ -3,10 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceScreen
         android:title="Notification Panel">
-        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-            android:defaultValue="0"
-            android:key="notification_bg_color"
-            android:title="Notification bg color"/>
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="blur"
+            android:summaryOff="Off"
+            android:summaryOn="On"
+            android:title="Blur Notificationpanel"
+            app:packageNameToKill="com.android.systemui"
+            app:isSilent="false"/>
+        <PreferenceCategory android:title="Notifications Colors">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Custom Background" android:defaultValue="false" android:summaryOff="Off" android:summaryOn="On" android:key="customnoti" app:packageNameToKill="com.android.systemui" app:isSilent="false"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:defaultValue="0" android:dependency="customnoti" android:key="notification_bg_color" android:title="Notification bg color" app:packageNameToKill="com.android.systemui" app:isSilent="false"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Notification Text Color" android:key="pulldown_text" android:summary="Choose text color" android:defaultValue="-14606047" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+        </PreferenceCategory>
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="true"
             android:key="test"
@@ -428,14 +437,26 @@
     </PreferenceScreen>
 
     <PreferenceScreen android:title="Expanded Statusbar">
-        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-            android:title="Multi-user Avatar"
-            android:key="multiuser_avatar"
-            android:defaultValue="false"
-            android:summaryOn="Multi-user Avatar shown"
-            android:summaryOff="Multi-user Avatar hidden"
-            app:isSilent="false"
-            app:packageNameToKill="com.android.systemui"/>
+        <PreferenceCategory  android:title="Clock and Date">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Stock clock" android:key="hide_header_stock_clock" android:summaryOn="Show" android:summaryOff="Hide" android:defaultValue="true" app:isSilent="false" app:packageNameToKill="com.android.systemui" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Mod clock" android:key="hide_header_mod_clock" android:summaryOn="Show" android:summaryOff="Hide" android:defaultValue="false" app:isSilent="false" app:packageNameToKill="com.android.systemui" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Mod clock second" android:key="hide_header_mod_clock_second" android:dependency="hide_header_mod_clock" android:summaryOn="Show" android:summaryOff="Hide" android:defaultValue="false" app:isSilent="false" app:packageNameToKill="com.android.systemui" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Clock and Date Colors" android:key="link_colors" android:summaryOn="Custom" android:dependency="hide_header_mod_clock" android:summaryOff="Stock" android:defaultValue="false" app:isSilent="false" app:packageNameToKill="com.android.systemui" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Mod clock hours color" android:key="header_mod_clock_hours_color" android:dependency="hide_header_mod_clock" android:defaultValue="#ff000000" app:isSilent="false" app:packageNameToKill="com.android.systemui" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Mod clock minute color" android:key="header_mod_clock_minutes_color" android:dependency="hide_header_mod_clock" android:defaultValue="#ff000000" app:isSilent="false" app:packageNameToKill="com.android.systemui" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Mod clock second color" android:key="header_mod_clock_seconds_color" android:dependency="hide_header_mod_clock" android:defaultValue="#ff000000" app:isSilent="false" app:packageNameToKill="com.android.systemui" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Data color" android:key="date_header_color" android:dependency="hide_header_mod_clock" android:defaultValue="#ff000000" app:isSilent="false" app:packageNameToKill="com.android.systemui" />
+        </PreferenceCategory>
+        <PreferenceCategory  android:title="Multi User">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:title="Multi-user Avatar"
+                android:key="multiuser_avatar"
+                android:defaultValue="false"
+                android:summaryOn="Multi-user Avatar shown"
+                android:summaryOff="Multi-user Avatar hidden"
+                app:isSilent="false"
+                app:packageNameToKill="com.android.systemui"/>
+        </PreferenceCategory>
         <PreferenceCategory  android:title="Colors">
             <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                 android:title="Expanded view custom color"
